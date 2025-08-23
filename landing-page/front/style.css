@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Metropolis font';
-    src: url(../src/fonts/metropolis/Metropolis-Regular.otf) format('opentype'); src: url(../src/fonts/metropolis/Metropolis-SemiBold.otf) format('opentype');
+    font-family: Metropolis;
+    src: url(../src/fonts/metropolis/Metropolis-Regular.otf) format('opentype');
 
     font-family: 'Neue Machina';
     src: url(../src/fonts/neue/NeueMachina-Regular.otf) format('opentype');
@@ -23,7 +23,7 @@
 }
 
 body {
-    font: normal  regular 18px 'Metropolis font', Arial, sans-serif;
+    font-family: Metropolis, Arial, sans-serif;
     line-height: 1.5rem;
     color: var(--corP);
     background-color: var(--corPreto);
