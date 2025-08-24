@@ -7,7 +7,7 @@
     src: url(../src/fonts/metropolis/Metropolis-Regular.otf) format('opentype'); font-weight: 300;
 
     font-family: Metropolis;
-    src: url(../src/fonts/metropolis/Metropolis-SemiBold.otf) format('opentype'); font-weight: 500;
+    src: url(../src/fonts/metropolis/Metropolis-Medium.otf) format('opentype'); font-weight: 400;
 
     font-family: 'Neue Machina';
     src: url(../src/fonts/neue/NeueMachina-Regular.otf) format('opentype'); font-weight: 400;
@@ -51,7 +51,7 @@ a {
     width: fit-content;
     height: fit-content;
     line-height: 0;
-    font-size: 14px;
+    font-size: 12px;
 
     background: radial-gradient(ellipse at top center, rgba(255, 255, 255, .25), #ffffff00 70%);
     --webkit-background: radial-gradient(ellipse at top center, rgba(255, 255, 255, .25), #ffffff00 70%);
@@ -103,9 +103,9 @@ a {
 /* Textos globais */
 
 h1 {
-    line-height: 1.2rem;
     color: var(--corH1);
     font: normal 400 3rem 'Neue Machina', Arial, Helvetica, sans-serif;
+    line-height: 3.4rem;
 }
 
 h2 {
@@ -126,17 +126,6 @@ h4 {
     font: normal 800 0.75rem 'Neue Machina', Arial, Helvetica, sans-serif;
 }
 
-p, a {
-    line-height: 1.5rem;
-    color: var(--corP);
-    font: normal 300 1.2rem Metropolis, Arial, Helvetica, sans-serif;
-}
-
-.p2 {
-    line-height: 1.3rem;
-    font-size: 1rem;
-}
-
 .destaqueH {
     background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
     --wewbkit-background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
@@ -144,8 +133,18 @@ p, a {
     -webkit-text-fill-color: transparent;
 }
 
+p, a {
+    color: var(--corP);
+    font: normal 300 1rem/1.5rem Metropolis, Arial, Helvetica, sans-serif;
+}
+
+.p2 {
+    line-height: 1.3rem;
+    font-size: .75rem;
+}
+
 .destaqueP {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--corH1);
 }
 
@@ -187,24 +186,37 @@ main {
 .divHero {
     display: flex;
     flex-direction: column;
-    gap: 64px;
-    padding: 6% 0;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    padding: 6% 0 6% 0;
     width: 100%;
+    height: 90dvh;
 }
 
 .divMenu {
+    position: fixed;
+    z-index: 5;
+    top: 3%;
+
     display: flex;
-    width: 100%;
+    width: 80vw;
     height: fit-content;
     justify-content: space-between;
     border-radius: 50px;
+    padding: 1% 1% 1% 2%;
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter: blur(10px);
+    border: rgba(59, 101, 179, 0.068) .5px solid;
 }
 
-.menu {
+.logoAqui {
+    align-self: center;
+}
+
+ul.menu {
     display: flex;
-    gap: 32px;
+    gap: 1.5em;
     align-items: center;
     justify-content: center;
     list-style-type: none;
@@ -214,7 +226,7 @@ ul.menu > li > a::before {
     content: '';
     position: absolute;
     left: auto;
-    bottom: 0;
+    bottom: 25%;
     width: 4%;
     height: 2px;
     background: var(--corAzul);
@@ -232,28 +244,110 @@ ul.menu > li > a:hover {
 }
 
 .heroContent {
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 48px;
+    gap: 2em;
     text-align: center;
 }
 
 .heroTextos {
     display: flex;
-    max-width: 920px;
+    max-width: 60vw;
     flex-direction: column;
-    gap: 32px;
+    gap: .75em;
 }
 
 .heroTextos > p {
-    max-width: 580px;
+    max-width: 40vw;
     align-self: center;
 }
 
 .divCtas {
     display: flex;
-    gap: 20px;
+    gap: 1.5em;
+}
+
+/* Seção de serviços */
+
+.divServices {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 6% 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicesTextos {
+    display: flex;
+    max-width: 35vw;
+    text-align: center;
+    flex-direction: column;
+    gap: .75em;
+}
+
+.servicesCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+    max-width: 80vw;
+}
+
+.servicescard {
+    position: relative;
+    width: 320px;
+    height: 200px;
+    display: flex;
+    padding: 1em 1em;
+    align-items: end;
+    transition: all .3s;
+
+    border-radius: 1em;
+    border: var(--corAzul) .5px solid;
+    background-image: linear-gradient(163deg, rgba(59, 101, 179, .03) 50%, rgba(59, 101, 179, .35) 160%);
+}
+
+.servicesCardContent {
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+    max-width: 290px;
+    z-index: 2;
+}
+
+.cardIcone {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.flechaProjeto {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    opacity: 0;
+    z-index: 3;
+    transition: all .3s;
+}
+
+.imageProjeto {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s;
+    z-index: 2;
+    width: 220px;
+    height: 220px;
+}
+
+.clientes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    width: -webkit-fill-available;
 }
 
