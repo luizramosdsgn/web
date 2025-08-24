@@ -120,7 +120,13 @@ h4 {
 p {
     line-height: auto;
     color: var(--corH1);
-    font: normal 0.75rem Metropolis, Arial, Helvetica, sans-serif;
+    font: normal 1.2rem Metropolis, Arial, Helvetica, sans-serif;
+}
+
+p.p2 {
+    line-height: auto;
+    color: var(--corH1);
+    font: normal 1rem Metropolis, Arial, Helvetica, sans-serif;
 }
 
 body {
