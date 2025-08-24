@@ -1,12 +1,19 @@
 /* Configurações Goblais */
 
+@charset "UTF-8";
+
 @font-face {
     font-family: Metropolis;
-    src: url(../src/fonts/metropolis/Metropolis-Regular.otf) format('opentype');
+    src: url(../src/fonts/metropolis/Metropolis-Regular.otf) format('opentype'); font-weight: 300;
+
+    font-family: Metropolis;
+    src: url(../src/fonts/metropolis/Metropolis-SemiBold.otf) format('opentype'); font-weight: 500;
 
     font-family: 'Neue Machina';
     src: url(../src/fonts/neue/NeueMachina-Regular.otf) format('opentype'); font-weight: 400;
 }
+
+
 
 @font-face {
     font-family: 'Neue Machina'; 
@@ -125,9 +132,21 @@ p, a {
     font: normal 300 1.2rem Metropolis, Arial, Helvetica, sans-serif;
 }
 
-p.p2 {
+.p2 {
     line-height: 1.3rem;
     font-size: 1rem;
+}
+
+.destaqueH {
+    background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
+    --wewbkit-background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.destaqueP {
+    font-weight: 600;
+    color: var(--corH1);
 }
 
 body {
@@ -162,6 +181,8 @@ main {
     display: flex;
     flex-direction: column;
 }
+
+/* Seção hero */
 
 .divHero {
     display: flex;
@@ -209,3 +230,30 @@ ul.menu > li > a:hover {
     transition: all .3s;
     color: var(--corAzul);
 }
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    text-align: center;
+}
+
+.heroTextos {
+    display: flex;
+    max-width: 920px;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.heroTextos > p {
+    max-width: 580px;
+    align-self: center;
+}
+
+.divCtas {
+    display: flex;
+    gap: 20px;
+}
+
