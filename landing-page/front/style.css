@@ -119,10 +119,10 @@ h4 {
     font: normal 800 0.75rem 'Neue Machina', Arial, Helvetica, sans-serif;
 }
 
-p {
+p, a {
     line-height: 1.5rem;
     color: var(--corP);
-    font: normal 1.2rem Metropolis, Arial, Helvetica, sans-serif;
+    font: normal 300 1.2rem Metropolis, Arial, Helvetica, sans-serif;
 }
 
 p.p2 {
@@ -140,6 +140,7 @@ body {
     overflow-x: hidden;
 }
 
+/* textura
 body::after{
     content:"";
     position: fixed;
@@ -154,9 +155,56 @@ body::after{
     opacity: 0.05;
     mix-blend-mode: plus-lighter;
 }
+*/
 
 main {
     max-width: 1280px;
     display: flex;
     flex-direction: column;
+}
+
+.divHero {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 6% 0;
+    width: 100%;
+}
+
+.divMenu {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+ul.menu > li > a::before {
+    content: '';
+    position: absolute;
+    left: auto;
+    bottom: 0;
+    width: 4%;
+    height: 2px;
+    background: var(--corAzul);
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+ul.menu > li > a:hover::before {
+    transform: scaleX(1);
+}
+
+ul.menu > li > a:hover {
+    transition: all .3s;
+    color: var(--corAzul);
 }
