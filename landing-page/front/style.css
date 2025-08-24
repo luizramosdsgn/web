@@ -178,7 +178,7 @@ main {
     justify-content: space-between;
     border-radius: 50px;
     backdrop-filter: blur(10px);
-    --webkit-backdrop-filter: blur(10p);
+    --webkit-backdrop-filter: blur(10px);
 }
 
 .menu {
