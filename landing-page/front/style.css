@@ -361,3 +361,66 @@ ul.menu > li > a:hover {
     width: -webkit-fill-available;
 }
 
+/* Seção de Trabalhos */
+
+.divTrabalhos {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 6% 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.trabalhosTextos {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: .75em;
+}
+
+.navTrabalhos {
+    display: flex;
+    gap: 1.5em;
+    list-style-type: none;
+}
+
+.navTrabalhos > li > button {
+    color: var(--corAzul);
+    border: var(--corAzul) .5px solid;
+    border-radius: 32px;
+    padding: 12px 14px;
+    background: none;
+    transition: all .3s;
+    outline: none;
+    font: normal 300 1rem/1rem Metropolis, Arial, Helvetica, sans-serif;
+}
+
+.navTrabalhos > li > button:hover {
+    background: linear-gradient(163deg, rgba(59, 101, 179, .03) 50%, rgba(59, 101, 179, .35) 160%);
+}
+
+.navTrabalhos > li > button:focus {
+    color: var(--corP);
+    background-image: none;
+    background-color: var(--corAzul);
+    border: none;
+}
+
+.trabalhosCards {
+    display: flex;
+    gap: 24px;
+}
+
+.trabalhosCard {
+    display: flex;
+    align-items: end;
+    width: 330px;
+    height: 430px;
+    padding: 16px;
+    background-color: var(--corFooter);
+}
+
+.contentTrabalhosCard {
+
+}
