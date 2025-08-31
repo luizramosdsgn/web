@@ -129,6 +129,7 @@ h4 {
 .destaqueH {
     background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
     --wewbkit-background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
