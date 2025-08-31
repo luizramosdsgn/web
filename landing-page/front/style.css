@@ -351,7 +351,7 @@ ul.menu > li > a:hover {
     pointer-events: none;
     width: 200px;
     border-left: var(--corAzul) .5px solid;
-    height: 198px;
+    height: 100%;
 }
 
 .clientes {
@@ -481,7 +481,7 @@ ul.menu > li > a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5em;
+    gap: 3.2em;
 }
 
 .navMetodo {
@@ -566,7 +566,7 @@ ul.menu > li > a:hover {
     position: sticky;
     top: 34%;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 3.2em;
     /* background: linear-gradient(163deg, rgba(59, 101, 179, .03) 50%, rgba(59, 101, 179, .35) 160%); */
     border: var(--corAzul) .5px solid;
     backdrop-filter: blur(10px);
