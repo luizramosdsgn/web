@@ -117,7 +117,7 @@ h2 {
 h3 {
     line-height: auto;
     color: var(--corH1);
-    font: normal 800 1.125rem 'Neue Machina', Arial, Helvetica, sans-serif;
+    font: normal 400 1.125rem 'Neue Machina', Arial, Helvetica, sans-serif;
 }
 
 h4 {
@@ -464,6 +464,8 @@ ul.menu > li > a:hover {
     gap: 3em;
     max-width: 38%;
     position: sticky;
+    top: 20%;
+    height: fit-content;
 }
 
 .metodoTextos {
@@ -476,4 +478,123 @@ ul.menu > li > a:hover {
 
 .metodoCards {
     max-width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.navMetodo {
+    display: flex;
+    gap: 1.5em;
+    list-style-type: none;
+    position: sticky;
+    top: 20%;
+}
+
+.navMetodo > li > button {
+    color: var(--corAzul);
+    border: var(--corAzul) .5px solid;
+    border-radius: 32px;
+    padding: 12px 14px;
+    background: none;
+    transition: all .6  s;
+    outline: none;
+    font: normal 300 1rem/1rem Metropolis, Arial, Helvetica, sans-serif;
+}
+
+.navMetodo > li > button:hover {
+    background: linear-gradient(163deg, rgba(59, 101, 179, .03) 50%, rgba(59, 101, 179, .35) 160%);
+    transition: all .6s;
+}
+
+.navMetodo > li > button:focus {
+    color: var(--corP);
+    background-image: none;
+    background-color: var(--corAzul);
+    border: none;
+}
+
+.metodo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.cardMetodo {
+    padding: 1.5em;
+    border-radius: 1em;
+    /* background: linear-gradient(163deg, rgba(59, 101, 179, .03) 50%, rgba(59, 101, 179, .35) 160%); */
+    border: var(--corAzul) .5px solid;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 34%;
+}
+
+.cardMetodo:nth-child(2) {
+    top: calc(34% + 13%);
+}
+.cardMetodo:nth-child(3) {
+    top: calc(47% + 13%);
+}
+.cardMetodo:nth-child(4) {
+    top: calc(60% + 13%);
+}
+
+.metodoContent {
+    gap: 1.35em;
+}
+
+.cardMetodo > img {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+}
+
+.entrega {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.cardEntrega {
+    min-width: 30.5em;
+    padding: 1.5em;
+    border-radius: 1em;
+    display: flex;
+    position: sticky;
+    top: 34%;
+    flex-direction: column;
+    gap: 1.5em;
+    /* background: linear-gradient(163deg, rgba(59, 101, 179, .03) 50%, rgba(59, 101, 179, .35) 160%); */
+    border: var(--corAzul) .5px solid;
+    backdrop-filter: blur(10px);
+}
+
+.entregaContent {
+    padding-left: 5%;
+}
+
+.entregaContent > li::marker {
+    color: var(--corP);
+}
+
+.cardEntrega > h2 {
+    margin-top: .5em;
+    line-height: 0;
+    gap: 0;
+}
+
+.cardEntrega:nth-child(2) {
+    top: calc(35% + 9%);
+}
+.cardEntrega:nth-child(3) {
+    top: calc(44% + 10%);
+}
+.cardEntrega:nth-child(4) {
+    top: calc(54% + 14%);
+}
+.cardEntrega:nth-child(5) {
+    min-height: 16.25em;
 }
