@@ -1,3 +1,21 @@
+// Toogle da Lua e do Sol
+
+const iconMoon = document.querySelector('.iconMoon');
+const iconSun = document.querySelector('.iconSun');
+
+iconMoon.addEventListener('click', () => {
+
+    iconMoon.classList.add('inativo');
+    iconSun.classList.remove('inativo');
+});
+
+iconSun.addEventListener('click', () => {
+  
+    iconSun.classList.add('inativo');
+    iconMoon.classList.remove('inativo');
+});
+
+
 // Hover nos cards de serviço
 
 var cards = document.querySelectorAll('.servicescard');
