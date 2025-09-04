@@ -65,6 +65,7 @@ a {
     justify-content: center;
     gap: 10px;
     padding: 4px 4px 4px 24px;
+    transition: box-shadow .3s;
 
     color: var(--corBranco);
     line-height: 0;
@@ -73,6 +74,10 @@ a {
     box-shadow: #2A61C8 0px 1px 2px inset;
     background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
     --wewbkit-background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
+}
+
+.ctaPrincipal:hover {
+    box-shadow: #2A61C8 0px 1px 2px inset, 0px 0px 15px rgba(117, 152, 218, 0.363);
 }
 
 .ctaSecundaria {
@@ -159,22 +164,20 @@ body {
     overflow-x: hidden;
 }
 
-/* textura
 body::after{
     content:"";
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     background-image: radial-gradient(at 20% 80%, #fff 1px, transparent 0px);
-    background-size: 2px 2px;
+    background-size: 3px 3px;
     pointer-events: none !important;
     z-index: 9999;
-    opacity: 0.05;
+    opacity: 0.01;
     mix-blend-mode: plus-lighter;
 }
-*/
 
 main {
     max-width: 1280px;
