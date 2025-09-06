@@ -219,7 +219,7 @@ img.heroBg {
     height: fit-content;
     justify-content: space-between;
     border-radius: 50px;
-    padding: 1% 1% 1% 2%;
+    padding: 1% 1% 1% 1.5%;
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter: blur(10px);
     border: rgba(59, 101, 179, 0.068) .5px solid;
@@ -277,6 +277,16 @@ ul.menu > li > a:hover, ul.menu > li > svg > path:hover {
     pointer-events: none;
 }
 
+.menu > li > a.ctaSecundaria {
+    color: var(--corP);
+    border-color: var(--corP);
+}
+
+.menu > li > a.ctaSecundaria:hover {
+    color: var(--corAzul);
+    border-color: var(--corAzul);
+}
+
 .heroContent {
     margin-top: 10%;
     display: flex;
@@ -304,14 +314,43 @@ ul.menu > li > a:hover, ul.menu > li > svg > path:hover {
     gap: 1.5em;
 }
 
-.menu > li > a.ctaSecundaria {
-    color: var(--corP);
-    border-color: var(--corP);
+a.aInsta {
+    display: flex;
 }
 
-.menu > li > a.ctaSecundaria:hover {
-    color: var(--corAzul);
-    border-color: var(--corAzul);
+.meuinsta {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.meuinsta img {
+    width: 1.75em;
+    height: 1.75em;
+    border: .5px solid var(--corAzul);
+    border-radius: 50%;
+    
+}
+
+div.textoInsta {
+    position: inline-block;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+}
+
+p.meuNome {
+    font-size: .9rem;
+    color: var(--corH1);
+    line-height: 1;
+}
+
+p.meuArroba {
+    font-size: .8rem;
+    color: var(--corP);
+    line-height: 1;
 }
 
 /* Seção de serviços */
