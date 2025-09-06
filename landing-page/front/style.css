@@ -509,42 +509,62 @@ p.meuArroba {
 
 .trabalhosCards {
     display: flex;
-    gap: 24px;
+    gap: 1.5em;
 }
 
 .trabalhosCard {
     display: flex;
     align-items: end;
-    width: 330px;
-    height: 430px;
-    padding: 16px;
+    height: 26.875em;
+    padding: 1em;
     background-color: var(--corFooter);
 }
 
-.navDinamica {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+/* Criando carrossel apenas com CSS */
+
+.trabalhosCards {
+    width: 81%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    anchor-name: --carrossel;
+    scroll-snap-type: x mandatory;
 }
 
-.flecha {
-    content: "";
-    height: 10px;
-    width: 10px;
-    background-image: url(../src/assets/icone-flecha.svg);
+.trabalhosCards::-webkit-scrollbar {
+    display: none;
 }
 
-.bolinha {
-    content: "";
-    border-radius: 50px;
-    width: 5.5px;
-    height: 5px;
-    background-color: var(--corBranco);
-    transition: all .3s;
-}
-
-.bolinha:focus {
+.trabalhosCards::scroll-button(right), .trabalhosCards::scroll-button(left) {
+    content: '>';
+    border: none;
     background-color: var(--corAzul);
+    font-family: Metropolis, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: var(--corBranco);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --carrossel;
+    position-area: right center;
+    translate: -50%;
+}
+
+.trabalhosCards::scroll-button(left) {
+    content: '<';
+    position-area: left center;
+    translate: 50%;
+}
+
+.trabalhosCards::scroll-button(right):disabled, .trabalhosCards::scroll-button(left):disabled {
+    opacity: .5;
+    cursor: auto;
+}
+
+.trabalhosCard {
+    flex: 0 0 20.625em;
+    scroll-snap-align: start;
 }
 
 /* Seção de Metodologia e Entrega */
