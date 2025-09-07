@@ -186,6 +186,7 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 50px;
 }
 
+/*
 body::after{
     content:"";
     position: fixed;
@@ -200,6 +201,7 @@ body::after{
     opacity: 0.01;
     mix-blend-mode: plus-lighter;
 }
+*/
 
 main {
     max-width: 1280px;
@@ -234,9 +236,9 @@ img.heroBg {
     position: fixed;
     z-index: 5;
     top: 3%;
-
     display: flex;
-    width: 80vw;
+    width: 100%;
+    max-width: 80vw;
     height: fit-content;
     justify-content: space-between;
     border-radius: 50px;
@@ -985,4 +987,29 @@ div.footerDireitos p:hover {
     display: flex;
     gap: 1.5em;
 }
+
+/* Responsividade */
+
+/*
+O quer precisa ser corrigido:
+- Utrawide
+    - Está completamente bugado, jogado para esquerda
+- Desktop
+    - Nada
+- Laptop
+    - Cards de serviços, deixar apenas 2 por linha
+- Tablet paisagem
+    - Largura dos textos das seções 1 e 2 muito pequenos
+    - Cards da metodologia estão com padding top muito grande 
+- Tablet retrato
+    - Largura dos textos das seções 1 e 2 muito pequenos
+    - Cards da metodologia estão com padding top muito grande
+    - Carrossel do portdolio, faltando margin lateral e deixar apenas 2 cards visíveis
+    - Div de metodologia e formulario faltando margin lateral
+    - Cards de serviços, deixar apenas 1 por linha
+- Celular paisagem
+    - Diminuir tamanho dos textos em geral (diminuir no body)
+    - Cards de serviço de portfolio, deixar apenas 1 por linha
+    - 
+*/
 
