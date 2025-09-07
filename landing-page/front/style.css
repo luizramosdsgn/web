@@ -171,6 +171,20 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+} 
+
+body::-webkit-scrollbar-track {
+	background: var(--corFooter);
+}
+
+body::-webkit-scrollbar-thumb {
+    border: var(--corFooter) solid 3px;
+	background: var(--corAzul);
+	border-radius: 50px;
+}
+
 body::after{
     content:"";
     position: fixed;
