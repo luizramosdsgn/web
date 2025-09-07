@@ -169,8 +169,8 @@ body::after{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100dvw;
-    height: 100dvh;
+    width: 100vw;
+    height: 100vh;
     background-image: radial-gradient(at 20% 80%, #fff 1px, transparent 0px);
     background-size: 3px 3px;
     pointer-events: none !important;
@@ -202,10 +202,9 @@ main {
 img.heroBg {
     position: absolute;
     z-index: -2;
-    top: -30px ;
-    right: -30px;
+    top: -2em ;
+    right: -8em;
     filter: blur(35px);
-
     mix-blend-mode: lighten;
 }
 
@@ -361,6 +360,7 @@ p.meuArroba {
     gap: 3em;
     padding: 6% 0;
     align-items: center;
+    width: 100%;
     justify-content: center;
 }
 
@@ -465,6 +465,7 @@ p.meuArroba {
 .divTrabalhos {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 3em;
     padding: 6% 0;
     align-items: center;
@@ -507,27 +508,22 @@ p.meuArroba {
     border: none;
 }
 
-.trabalhosCards {
-    display: flex;
-    gap: 1.5em;
-}
-
-.trabalhosCard {
-    display: flex;
-    align-items: end;
-    height: 26.875em;
-    padding: 1em;
-    background-color: var(--corFooter);
-}
-
 /* Criando carrossel apenas com CSS */
 
 .trabalhosCards {
+    display: flex;
+    gap: 1.5em;
     width: 81%;
     overflow-x: auto;
     scroll-behavior: smooth;
     anchor-name: --carrossel;
     scroll-snap-type: x mandatory;
+}
+
+.trabalhosCards::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
 }
 
 .trabalhosCards::-webkit-scrollbar {
@@ -541,8 +537,8 @@ p.meuArroba {
     font-family: Metropolis, Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     color: var(--corBranco);
-    height: 50px;
-    width: 50px;
+    height: 2em;
+    width: 2em;
     border-radius: 50%;
     cursor: pointer;
     position: fixed;
@@ -563,8 +559,19 @@ p.meuArroba {
 }
 
 .trabalhosCard {
+    display: flex;
+    align-items: end;
+    aspect-ratio: 3 / 4;
+    padding: 1em;
+    background-color: var(--corFooter);
     flex: 0 0 20.625em;
     scroll-snap-align: start;
+}
+
+@media (max-width: 500px) {
+    .trabalhosCard {
+        flex: 0 0 100%;
+    }
 }
 
 /* Seção de Metodologia e Entrega */
@@ -573,6 +580,7 @@ p.meuArroba {
     display: flex;
     gap: 3em;
     padding: 6% 0;
+    width: 100%;
     justify-content: center;
 }
 
