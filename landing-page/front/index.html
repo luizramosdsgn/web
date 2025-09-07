@@ -13,7 +13,7 @@
     <main>
         <section class="divHero">
             <nav class="divMenu">
-                <a href="" target="_blank" class="aInsta">
+                <a href="https://instagram.com/luizramos.07" target="_blank" class="aInsta">
                     <div class="meuinsta">
                         <img src="../src/assets/imagem-perfil.webp" alt="Minha Foto de perfil">
                         <div class="textoInsta">
@@ -26,13 +26,13 @@
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#services">Serviços</a></li>
                     <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                     <li><svg class="iconMoon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 <path d="M20.985 12.486C20.8912 14.2221 20.2966 15.894 19.273 17.2994C18.2494 18.7048 16.8406 19.7837 15.217 20.4055C13.5933 21.0274 11.8243 21.1656 10.1237 20.8035C8.42318 20.4414 6.86392 19.5945 5.63442 18.3652C4.40493 17.1358 3.55785 15.5766 3.19558 13.8761C2.83331 12.1756 2.97136 10.4065 3.59304 8.78282C4.21472 7.15909 5.29342 5.75019 6.69874 4.72644C8.10406 3.70269 9.77583 3.10791 11.512 3.014C11.917 2.992 12.129 3.474 11.914 3.817C11.1949 4.96756 10.8869 6.32787 11.0405 7.67595C11.194 9.02403 11.7999 10.2803 12.7593 11.2397C13.7187 12.1991 14.9749 12.805 16.323 12.9585C17.6711 13.112 19.0314 12.8041 20.182 12.085C20.526 11.87 21.007 12.081 20.985 12.486Z" stroke="none" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg><svg class="iconSun inativo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 <path d="M12 3V4M12 20V21M3 12H4M20 12H21M18.364 5.636L17.657 6.343M6.343 17.657L5.636 18.364M5.636 5.636L6.343 6.343M17.657 17.657L18.364 18.364M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="none" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></li>
-                    <li><a href="https://wa.me/+5587996639862?text=Olá!%20Gostaria%20de%20solicitar%20uma%20proposta.%20Por%20favor,%20me%20forneça%20mais%20informações%20sobre%20os%20serviços." class="ctaSecundaria">Orçamento</a></li>
+                    <li><a target="_blank" href="https://wa.me/+5587996639862?text=Olá!%20Gostaria%20de%20solicitar%20uma%20proposta." class="ctaSecundaria">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="heroContent">
@@ -42,8 +42,8 @@
                     <p>Criamos identidades visuais e landing pages que comunicam a essência da sua marca e <span class="destaqueP">conectam você ao seu público ideal.</span></p>
                 </div>
                 <div class="divCtas">
-                    <a href="https://wa.me/+5587996639862?text=Olá!%20Gostaria%20de%20solicitar%20uma%20proposta.%20Por%20favor,%20me%20forneça%20mais%20informações%20sobre%20os%20serviços." class="ctaPrincipal">Solicitar Proposta <img src="../src/assets/icon-cta.svg" alt="Ícone de seta"></a>
-                    <a href="https://wa.me/+5587996639862?text=Olá!%20Gostaria%20de%20solicitar%20uma%20proposta.%20Por%20favor,%20me%20forneça%20mais%20informações%20sobre%20os%20serviços." class="ctaSecundaria">Ver Portfólio</a>
+                    <a target="_blank" href="https://wa.me/+5587996639862?text=Olá!%20Gostaria%20de%20solicitar%20uma%20proposta." class="ctaPrincipal">Solicitar Proposta <img src="../src/assets/icon-cta.svg" alt="Ícone de seta"></a>
+                    <a href="#" class="ctaSecundaria">Ver Portfólio</a>
                 </div>
             </div>
         </section>
@@ -302,11 +302,13 @@
                 </div>
             </div>
         </section>
-        <section class="divForm">
+        <section class="divForm" id="contato">
             <div class="formContent">
                 <p class="tag">Entre em Contato</p>
-                <h1>Vamos transformar suas <span class="destaqueH">ideias</span> em realidade</h1>
-                <p>Estamos prontos para discutir seu projeto e criar soluções visuais que representem a essência da sua marca.</p>
+                <div class="formTextos">
+                    <h1>Vamos transformar suas <span class="destaqueH">ideias</span> em realidade</h1>
+                    <p>Estamos prontos para discutir seu projeto e criar soluções visuais que representem a essência da sua marca.</p>
+                </div>
                 <div class="contato">
                     <div class="email">
                         <img src="../src/assets/icone-email.svg" alt="Ícone de email">
@@ -331,11 +333,36 @@
                     </div>
                 </div>
             </div>
-            <form class="formulario">
-                <h2>Solicite um orçamento</h2>
-                <input type="text" name="nome" id="nome" placeholder="Seu nome completo">
-                <input type="email" name="email" id="email" placeholder="seu@email.com">
-                <input type="radio" name="servico" id="servico" placeholder="Selecione um serviço">
+            <form class="formulario" autocomplete="on" method="get">
+                <fildset>
+                    <legend>Solicite um orçamento</legend>
+                    <div class="campoNome">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome completo" required autocomplete="name">
+                    </div>
+                    <div class="campoEmail">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="seu@email.com" required autocomplete="email">
+                    </div>
+                    <div class="campoServico">
+                        <label for="">Serviço</label>
+                        <fildset class="servicosEscolha">
+                            <div>
+                                <div><input type="checkbox" name="idv" id="idv"><label for="idv">Identidade Visual</label></div>
+                                <div><input type="checkbox" name="lp" id="lp"><label for="lp">Landing Page</label></div>
+                            </div>
+                            <div>
+                                <div><input type="checkbox" name="sm" id="sm"><label for="sm">Social Media</label></div>
+                                <div><input type="checkbox" name="mg" id="mg"><label for="mg">Material Gráfico</label></div>
+                            </div>
+                        </fildset>
+                    </div>
+                    <div class="campoMensagem">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Descreva seu projeto"></textarea>
+                    </div>
+                </fildset>
+                <input type="submit" value="Enviar Mensagem" class="btnSubmit">
             </form>
         </section>
         <section class="divFooter">
