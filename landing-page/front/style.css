@@ -245,7 +245,7 @@ img.heroBg {
     padding: 1% 1% 1% 1.5%;
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter: blur(10px);
-    border: rgba(59, 101, 179, 0.068) .5px solid;
+    border: rgba(59, 101, 179, 0.336) 1px solid;
 }
 
 .logoAqui {
@@ -986,9 +986,6 @@ div.footerDireitos p:hover {
 /* Responsividade */
 
 /*
-O quer precisa ser corrigido:
-- Desktop
-    - Nada
 - Laptop
     - Cards de serviços, deixar apenas 2 por linha
 - Tablet paisagem
@@ -1024,6 +1021,13 @@ O quer precisa ser corrigido:
     }
 }
 
+/* Laptop */
+
 @media (max-width: 1366px) {
-    
+    .divHero {
+        height: auto;
+    }
+    .heroTextos, .servicesTextos {
+        max-width: 60%;
+    }
 }
