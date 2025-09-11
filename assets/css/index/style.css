@@ -16,11 +16,12 @@
 body {
     background-color: var(--corPreto);
     display: flex;
-    width: 100%;
+    font-size: 16px;
+    width: 100vw;
+    min-height: 100dvh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1920px;
     overflow-x: hidden;
 }
 
@@ -38,63 +39,15 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50px;
 }
 
-/* textura
-
-body::after{
-    content:"";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: radial-gradient(at 20% 80%, #fff 1px, transparent 0px);
-    background-size: 3px 3px;
-    pointer-events: none !important;
-    z-index: 9999;
-    opacity: 0.01;
-    mix-blend-mode: plus-lighter;
-}
-*/
-
 main {
     max-width: 1280px;
     display: flex;
     flex-direction: column;
 }
 
-/* Responsividade */
-
-
-
-/*
-- Laptop
-    - Cards de serviços, deixar apenas 2 por linha
-- Tablet paisagem
-    - Largura dos textos das seções 1 e 2 muito pequenos
-    - Cards da metodologia estão com padding top muito grande 
-- Tablet retrato
-    - Largura dos textos das seções 1 e 2 muito pequenos
-    - Cards da metodologia estão com padding top muito grande
-    - Carrossel do portdolio, faltando margin lateral e deixar apenas 2 cards visíveis
-    - Div de metodologia e formulario faltando margin lateral
-    - Cards de serviços, deixar apenas 1 por linha
-- Celular paisagem
-    - Diminuir tamanho dos textos em geral (diminuir no body)
-    - Cards de serviço de portfolio, deixar apenas 1 por linha
-    - 
-*/
-
 /* Utrawide */
 
 @media screen and (min-width: 1921px) {
-    body {
-        width: 100vw;
-        max-width: none;
-    }
-
-    .divHero {
-        height: auto;
-    }
 
     .heroContent,
     .servicesTextos {
@@ -109,12 +62,80 @@ main {
 /* Laptop */
 
 @media screen and (max-width: 1366px) {
-    .divHero {
-        height: auto !important;
-    }
 
     .heroTextos,
     .servicesTextos {
         max-width: 60%;
     }
+
+    .servicesCards {
+        max-width: 90vw;
+    }
 }
+
+/* Tablet paisagem */
+
+@media screen and (max-width: 1200px) {
+    .servicesCards {
+        max-width: 80vw;
+    }
+}
+
+/* Tablet retrato */
+
+@media screen and (max-width: 1053px) {
+
+    p,
+    a {
+        font-size: .875rem;
+    }
+
+    .trabalhosCards {
+        width: 51%;
+    }
+
+    .servicesCards {
+        max-width: 90vw;
+    }
+
+    .divTrabalhos,
+    .divMetodologiam,
+    .divForm {
+        margin: 0 1em 0 1em;
+    }
+
+    .metodoContentDiv {
+        max-width: 30%;
+    }
+
+    .divForm {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formContent,
+    .formulario {
+        position: static;
+        max-width: none;
+        width: 50%;
+        align-items: center;
+
+        .formTextos {
+            text-align: center;
+        }
+    }
+
+    .contato {
+        display: none;
+    }
+}
+
+/* Celular paisagem */
+
+/* Responsividade
+
+- Celular paisagem
+    - Diminuir tamanho dos textos em geral (diminuir no body)
+    - Cards de serviço de portfolio, deixar apenas 1 por linha
+    - 
+*/

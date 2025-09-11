@@ -107,9 +107,3 @@
   flex: 0 0 20.625em;
   scroll-snap-align: start;
 }
-
-@media (max-width: 500px) {
-  .trabalhosCard {
-    flex: 0 0 100%;
-  }
-}
