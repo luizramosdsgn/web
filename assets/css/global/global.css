@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Metropolis;
+    src: url(../src/fonts/metropolis/Metropolis-Regular.otf) format('opentype'); font-weight: 300;
+
+    font-family: Metropolis;
+    src: url(../src/fonts/metropolis/Metropolis-Medium.otf) format('opentype'); font-weight: 400;
+
+    font-family: 'Neue Machina';
+    src: url(../src/fonts/neue/NeueMachina-Regular.otf) format('opentype'); font-weight: 400;
+}
+
+
+
+@font-face {
+    font-family: 'Neue Machina'; 
+    src: url(../src/fonts/neue/NeueMachina-Ultrabold.otf) format('opentype'); font-weight: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cores goblais */
+
+:root {
+    --corAzul: #3179FF;
+    --corBranco: #FFFFFF;
+    --corPreto: #151515;
+    --corFooter: #101010;
+    --corTracadoBotao: rgba(255, 255, 255, .06);
+    --corInput: rgba(0, 0, 0, 0.5);
+    --corH1: rgba(255, 255, 255, .8);
+    --corP: rgba(255, 255, 255, .6);
+}

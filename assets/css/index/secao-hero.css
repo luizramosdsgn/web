@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+
+img.heroBg {
+  position: absolute;
+  z-index: -2;
+  top: -2em;
+  right: -8em;
+  filter: blur(35px);
+  mix-blend-mode: lighten;
+}
+
+section.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  padding: 6% 0 6% 0;
+  width: 100%;
+  height: 90dvh;
+  position: relative;
+
+  nav {
+    position: fixed;
+    z-index: 5;
+    top: 3%;
+    display: flex;
+    width: 100%;
+    max-width: 80vw;
+    height: fit-content;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 1% 1% 1% 1.5%;
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    border: rgba(59, 101, 179, 0.336) 1px solid;
+  }
+}
+
+ul.menu {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+ul.menu>li>a:not(.ctaSecundaria)::before,
+ul.menu>li>svg>path::before {
+  content: '';
+  position: absolute;
+  left: auto;
+  bottom: 25%;
+  width: 4%;
+  height: 2px;
+  background: var(--corAzul);
+  transform: scaleX(0);
+  transition: transform .2s;
+}
+
+ul.menu>li>a:hover::before,
+ul.menu>li>svg>path:hover::before {
+  transform: scaleX(1);
+}
+
+ul.menu>li>svg>path {
+  margin: 2px;
+}
+
+ul.menu>li>a:hover,
+ul.menu>li>svg>path:hover {
+  transition: all .5s;
+  color: var(--corAzul);
+  fill: var(--corAzul);
+  stroke: var(--corAzul);
+}
+
+.iconMoon>path,
+.iconSun>path {
+  transition: all .5s;
+  opacity: 1;
+  stroke: var(--corP);
+  fill: var(--corP);
+}
+
+.inativo {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.menu>li>a.ctaSecundaria {
+  color: var(--corP);
+  border-color: var(--corP);
+}
+
+.menu>li>a.ctaSecundaria:hover {
+  color: var(--corAzul);
+  border-color: var(--corAzul);
+}
+
+a.link-insta {
+  display: flex;
+}
+
+.meuinsta {
+  display: flex;
+  gap: .5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.meuinsta img {
+  width: 1.75em;
+  height: 1.75em;
+  border: .5px solid var(--corAzul);
+  border-radius: 50%;
+
+}
+
+div.textoInsta {
+  position: inline-block;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .25em;
+}
+
+p.meuNome {
+  font-size: .9rem;
+  color: var(--corH1);
+  line-height: 1;
+}
+
+p.meuArroba {
+  font-size: .8rem;
+  color: var(--corP);
+  line-height: 1;
+}
+
+div.heroContent {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  text-align: center;
+
+  div.heroTextos {
+    display: flex;
+    max-width: 60%;
+    flex-direction: column;
+    gap: .75em;
+  }
+
+  div.divCtas {
+    display: flex;
+    gap: 1.5em;
+  }
+}

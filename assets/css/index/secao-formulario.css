@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+.divForm {
+  display: flex;
+  gap: 3em;
+  padding: 6% 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  max-width: 47%;
+  position: sticky;
+  top: 20%;
+  height: fit-content;
+}
+
+.formTextos {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: .75em;
+  text-align: start;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.email,
+.telefone,
+.instagram {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.email>img,
+.telefone>img,
+.instagram>img {
+  border-radius: 1em;
+  transition: all .3s;
+}
+
+.email>img:hover,
+.telefone>img:hover,
+.instagram>img:hover {
+  box-shadow: 0px 0px 20px rgba(137, 178, 255, 0.445);
+}
+
+.formulario {
+  background: var(--corBranco);
+  color: var(--corPreto);
+  display: flex;
+  max-width: 35%;
+  gap: 1.5em;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1.5em;
+  border-radius: 1em;
+}
+
+.formulario>fildset {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 100%;
+  border: none;
+}
+
+legend {
+  text-align: center;
+  font: normal 400 1.5rem 'Neue Machina', Arial, Helvetica, sans-serif;
+}
+
+.campoNome,
+.campoEmail,
+.campoMensagem,
+.campoServico {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  width: 100%;
+}
+
+.servicosEscolha {
+  display: flex;
+  gap: .75em;
+  flex-wrap: wrap;
+  padding-left: 1.5em;
+}
+
+.campoServico>div {
+  display: flex;
+  gap: 1em;
+}
+
+.campoServico>div>div {
+  display: flex;
+  gap: .25em;
+}
+
+.campoNome>label,
+.campoEmail>label,
+.campoMensagem>label {
+  line-height: auto;
+  padding-left: 1.5em;
+  font: normal 400 .85rem 'Neue Machina', Arial, Helvetica, sans-serif;
+}
+
+.campoServico label {
+  line-height: auto;
+  align-items: center;
+  justify-content: center;
+  padding-left: .25em;
+  font: normal 400 .85rem 'Neue Machina', Arial, Helvetica, sans-serif;
+}
+
+.campoNome>input,
+.campoEmail>input,
+.campoServico input {
+  padding: 1em 1em;
+  height: 1em;
+  border-radius: 1.5em;
+  outline: none;
+  border: var(--corInput) solid 1px;
+  font: normal 300 1rem Metropolis, Arial, Helvetica, sans-serif;
+}
+
+.servicosEscolha {
+  padding: 1em 1em;
+  display: flex;
+  height: auto;
+  border-radius: 1em;
+  outline: none;
+  gap: 1.25em;
+  border: var(--corInput) solid 1px;
+  font: normal 300 1rem Metropolis, Arial, Helvetica, sans-serif;
+}
+
+.campoMensagem>textarea {
+  padding: 1em 1em;
+  height: 5em;
+  border-radius: 1em;
+  outline: none;
+  border: var(--corInput) solid 1px;
+  font: normal 300 1rem Metropolis, Arial, Helvetica, sans-serif;
+  resize: none;
+}
+
+.btnSubmit {
+  display: flex;
+  width: 98%;
+  align-items: center;
+  justify-content: center;
+  padding: .5em;
+  cursor: pointer;
+  transition: all .3s;
+
+  color: var(--corPreto);
+  border-radius: 4em;
+  border: none;
+  outline: var(--corTracadoBotao) 3px solid;
+  box-shadow: #2A61C8 0px 1px 2px inset;
+  background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
+  --wewbkit-background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
+}
+
+.btnSubmit:hover {
+  transform: translateY(-3px);
+  width: 100%;
+}
+
+.btnSubmit:active {
+  transform: translateY(0px);
+  width: 98%;
+}

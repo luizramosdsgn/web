@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+h1 {
+  color: var(--corH1);
+  font: normal 400 3rem 'Neue Machina', Arial, Helvetica, sans-serif;
+  line-height: 3.4rem;
+}
+
+h2 {
+  line-height: 1.2rem;
+  color: var(--corH1);
+  font: normal 400 2rem 'Neue Machina', Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  line-height: auto;
+  color: var(--corH1);
+  font: normal 400 1.125rem 'Neue Machina', Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  line-height: auto;
+  color: var(--corH1);
+  font: normal 800 0.75rem 'Neue Machina', Arial, Helvetica, sans-serif;
+}
+
+.destaqueH {
+  background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
+  --wewbkit-background-image: linear-gradient(to right, var(--corAzul), #89b2ff, #0a60ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p,
+a {
+  color: var(--corP);
+  font: normal 300 1rem/1.5rem Metropolis, Arial, Helvetica, sans-serif;
+}
+
+.p2 {
+  line-height: 1.3rem;
+  font-size: .75rem;
+}
+
+.destaqueP {
+  font-weight: 500;
+  color: var(--corH1);
+}

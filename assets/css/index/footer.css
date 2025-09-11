@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+footer.divFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 100vw;
+  align-items: center;
+  background-color: var(--corFooter);
+}
+
+.footerContent {
+  padding: 2em 1em 0 1em;
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.footerContent ul {
+  list-style: none;
+}
+
+.footerContent a:hover {
+  text-decoration: underline;
+}
+
+.footerBrand,
+.footerLinks,
+.footerServicos,
+.footerContato {
+  display: flex;
+  flex-direction: column;
+  gap: .75em;
+  width: 14em;
+}
+
+.footerServicos {
+  width: 10em;
+}
+
+.footerContato {
+  width: 16em;
+}
+
+div.footerDireitos {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: var(--corTracadoBotao) solid 1px;
+  padding: 1em;
+}
+
+div.footerDireitos p {
+  font-size: .75rem;
+}
+
+div.footerDireitos p:hover {
+  text-decoration: underline;
+}
+
+.politica {
+  display: flex;
+  gap: 1.5em;
+}
