@@ -39,10 +39,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50px;
 }
 
-main {
+main,
+section {
     max-width: 1280px;
-    display: flex;
-    flex-direction: column;
+    min-height: 80vh;
 }
 
 /* Utrawide */
@@ -61,13 +61,7 @@ main {
 
 /* Laptop */
 
-@media screen and (max-width: 1366px) {
-
-    .heroTextos,
-    .servicesTextos {
-        max-width: 60%;
-    }
-
+@media screen and (max-width: 1366px) and (min-width: 1201px) {
     .servicesCards {
         max-width: 90vw;
     }
@@ -84,6 +78,12 @@ main {
 /* Tablet retrato */
 
 @media screen and (max-width: 1053px) {
+
+    main,
+    section {
+        max-width: none;
+        width: 100vw;
+    }
 
     p,
     a {
@@ -105,7 +105,7 @@ main {
     }
 
     .metodoContentDiv {
-        max-width: 30%;
+        max-width: 40%;
     }
 
     .divForm {
@@ -131,6 +131,15 @@ main {
 }
 
 /* Celular paisagem */
+
+@media screen and (max-width: 768px) {
+    * {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        margin: 0;
+    }
+}
 
 /* Responsividade
 

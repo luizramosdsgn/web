@@ -12,7 +12,6 @@
 
 .servicesTextos {
   display: flex;
-  max-width: 35vw;
   text-align: center;
   flex-direction: column;
   gap: .75em;

@@ -10,7 +10,7 @@ img.heroBg {
   mix-blend-mode: lighten;
 }
 
-section.hero {
+main.hero {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -11,8 +11,6 @@
     src: url(../src/fonts/neue/NeueMachina-Regular.otf) format('opentype'); font-weight: 400;
 }
 
-
-
 @font-face {
     font-family: 'Neue Machina'; 
     src: url(../src/fonts/neue/NeueMachina-Ultrabold.otf) format('opentype'); font-weight: 800;
@@ -32,8 +30,6 @@ html {
 a {
     text-decoration: none;
 }
-
-/* Cores goblais */
 
 :root {
     --corAzul: #3179FF;
