@@ -11,23 +11,33 @@
 </head>
 
 <body>
-    <img class="heroBg" src="./assets/imagens/index/hero-bg-svg.svg" alt="">
-    <main class="hero">
+
+    <section class="secao-hero">
         <nav>
+
             <a href="https://instagram.com/luizramos.07" target="_blank" class="link-insta">
-                <div class="meuinsta">
+                <div class="meu-insta">
                     <img src="./assets/imagens/index/imagem-perfil.webp" alt="Minha Foto de perfil">
-                    <div class="textoInsta">
-                        <p class="meuNome">Luiz Ramos | Designer</p>
-                        <p class="meuArroba">@luizramos.07</p>
+                    <div class="textos-insta">
+                        <p class="meu-nome-insta">
+                            Luiz Ramos | Designer
+                        </p>
+                        <p class="meu-arroba-insta">
+                            @luizramos.07
+                        </p>
                     </div>
                 </div>
             </a>
-            <ul class="menu">
-                <li><a href="#">Início</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <div class="menu-mobile">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="menu-padrao">
+                <li class="menu-li"><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Contato</a></li>
                 <li><svg class="iconMoon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none">
                         <path
@@ -45,15 +55,25 @@
                         href="https://wa.me/+5587996639862?text=Olá!%20Gostaria%20de%20solicitar%20uma%20proposta."
                         class="ctaSecundaria">Orçamento</a></li>
             </ul>
+
         </nav>
-        <div class="heroContent">
-            <p class="tag">Design & Identidade Visual</p>
-            <div class="heroTextos">
-                <h1>Transformando <span class="destaqueH">ideias</span> em experiências visuais marcantes </h1>
-                <p>Criamos identidades visuais e landing pages que comunicam a essência da sua marca e <span
-                        class="destaqueP">conectam você ao seu público ideal.</span></p>
+
+        <div class="conteudo-hero">
+            <p class="tag">
+                Design & Identidade Visual
+            </p>
+
+            <div class="textos-hero">
+                <h1>
+                    Transformando <span class="destaqueH">ideias</span> em experiências visuais marcantes.
+                </h1>
+                <p>
+                    Criamos identidades visuais e landing pages que comunicam a essência da sua marca e <span
+                        class="destaqueP">conectam você ao seu público ideal.</span>
+                </p>
             </div>
-            <div class="divCtas">
+
+            <div class="ctas-hero">
                 <a target="_blank"
                     href="https://wa.me/+5587996639862?text=Olá!%20Gostaria%20de%20solicitar%20uma%20proposta."
                     class="ctaPrincipal">Solicitar Proposta <img src="./assets/imagens/index/icon-cta.svg"
@@ -61,7 +81,8 @@
                 <a href="#" class="ctaSecundaria">Ver Portfólio</a>
             </div>
         </div>
-    </main>
+    </section>
+
     <section class="divServices" id="services">
         <p class="tag">Nossos Serviços</p>
         <div class="servicesTextos">
@@ -141,6 +162,7 @@
             <p><span class="destaqueP">+ 100 clientes</span> satisfeitos</p>
         </div>
     </section>
+
     <section class="divTrabalhos" id="portfolio">
         <p class="tag">Nosso Portfólio</p>
         <div class="trabalhosTextos">
@@ -246,6 +268,7 @@
             </div>
         </div>
     </section>
+
     <section class="divMetodologia">
         <div class="metodoContentDiv">
             <p class="tag">Nosso Processo</p>
@@ -393,6 +416,7 @@
             </div>
         </div>
     </section>
+
     <section class="divForm" id="contato">
         <div class="formContent">
             <p class="tag">Entre em Contato</p>
@@ -461,6 +485,7 @@
             <input type="submit" value="Enviar Mensagem" class="btnSubmit">
         </form>
     </section>
+
     <footer class="divFooter">
         <div class="footerContent">
             <div class="footerBrand">
@@ -519,6 +544,7 @@
             </div>
         </div>
     </footer>
+
     <script src="./assets/js/script.js"></script>
 </body>
 

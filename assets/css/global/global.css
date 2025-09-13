@@ -2,18 +2,18 @@
 
 @font-face {
     font-family: Metropolis;
-    src: url(../src/fonts/metropolis/Metropolis-Regular.otf) format('opentype'); font-weight: 300;
+    src: url(../../fonts/metropolis/Metropolis-Regular.otf) format('opentype'); font-weight: 300;
 
     font-family: Metropolis;
-    src: url(../src/fonts/metropolis/Metropolis-Medium.otf) format('opentype'); font-weight: 400;
+    src: url(../../fonts/metropolis/Metropolis-Medium.otf) format('opentype'); font-weight: 400;
 
     font-family: 'Neue Machina';
-    src: url(../src/fonts/neue/NeueMachina-Regular.otf) format('opentype'); font-weight: 400;
+    src: url(../../fonts/neue/NeueMachina-Regular.otf) format('opentype'); font-weight: 400;
 }
 
 @font-face {
     font-family: 'Neue Machina'; 
-    src: url(../src/fonts/neue/NeueMachina-Ultrabold.otf) format('opentype'); font-weight: 800;
+    src: url(../../fonts/neue/NeueMachina-Ultrabold.otf) format('opentype'); font-weight: 800;
 }
 
 * {

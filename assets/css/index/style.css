@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 @import url('../global/global.css');
-@import url('../global/assets.css');
 @import url('../global/fonts.css');
+@import url('../global/assets.css');
 
 @import url('./secao-hero.css');
 @import url('./secao-servicos.css');
@@ -14,15 +14,14 @@
 
 
 body {
-    background-color: var(--corPreto);
     display: flex;
-    font-size: 16px;
-    width: 100vw;
-    min-height: 100dvh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;
     overflow-x: hidden;
+    font-size: 1rem;
+    background-color: var(--corPreto);
 }
 
 body::-webkit-scrollbar {
@@ -39,23 +38,15 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50px;
 }
 
-main,
-section {
-    max-width: 1280px;
-    min-height: 80vh;
-}
 
 /* Utrawide */
 
 @media screen and (min-width: 1921px) {
 
-    .heroContent,
-    .servicesTextos {
-        max-width: none;
-    }
-
-    .divMenu {
-        max-width: 1280px;
+    section.secao-hero nav,
+    footer div.footerContent,
+    footer div.footerDireitos {
+        max-width: 1440px;
     }
 }
 
@@ -71,7 +62,7 @@ section {
 
 @media screen and (max-width: 1200px) {
     .servicesCards {
-        max-width: 80vw;
+        max-width: 75vw;
     }
 }
 
@@ -130,21 +121,48 @@ section {
     }
 }
 
-/* Celular paisagem */
+@media screen and (max-width: 880px) {
+    h1 {
+        font-size: 2.25rem;
+        line-height: 2.6rem;
+    }
 
-@media screen and (max-width: 768px) {
-    * {
-        width: 100%;
-        max-width: none;
-        padding: 0;
-        margin: 0;
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    h4 {
+        font-size: .875rem;
+        line-height: 1.1rem;
+    }
+
+    p,
+    a {
+        font-size: .75rem;
+        line-height: 1.2rem;
+    }
+
+    .p2 {
+        font-size: .625rem;
+        line-height: 1rem;
+    }
+
+    .trabalhosCards {
+        width: 70%;
+    }
+
+    .metodoContentDiv {
+        max-width: 70%;
+    }
+
+    .formContent,
+    .formulario {
+        width: 80%;
     }
 }
-
-/* Responsividade
-
-- Celular paisagem
-    - Diminuir tamanho dos textos em geral (diminuir no body)
-    - Cards de serviço de portfolio, deixar apenas 1 por linha
-    - 
-*/
