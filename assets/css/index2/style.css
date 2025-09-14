@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@import url('../global/global.css');
+@import url('../global/fonts.css');
+@import url('../global/assets2.css');
+
+@import url('./section-hero.css');
+@import url('./secao-servicos.css');
+@import url('./secao-trabalhos.css');
+@import url('./secao-metodologia.css');
+@import url('./secao-formulario.css');
+@import url('./footer.css');
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    overflow-x: hidden;
+    font-size: 1rem;
+    background-color: var(--corPreto);
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--corFooter);
+}
+
+body::-webkit-scrollbar-thumb {
+    border: var(--corFooter) solid 3px;
+    background: var(--corAzul);
+    border-radius: 50px;
+}
+
+
+/* Utrawide */
+
+@media screen and (min-width: 1921px) {
+
+    section.secao-hero nav,
+    footer div.footerContent,
+    footer div.footerDireitos {
+        max-width: 1440px;
+    }
+}
+
+/* Laptop */
+
+@media screen and (max-width: 1366px) and (min-width: 1201px) {
+    .servicesCards {
+        max-width: 90vw;
+    }
+}
+
+/* Tablet paisagem */
+
+@media screen and (max-width: 1200px) {
+    .servicesCards {
+        max-width: 75vw;
+    }
+}
+
+/* Tablet retrato */
+
+@media screen and (max-width: 1053px) {
+
+    main,
+    section {
+        max-width: none;
+        width: 100vw;
+    }
+
+    p,
+    a {
+        font-size: .875rem;
+    }
+
+    .trabalhosCards {
+        width: 51%;
+    }
+
+    .servicesCards {
+        max-width: 90vw;
+    }
+
+    .divTrabalhos,
+    .divMetodologiam,
+    .divForm {
+        margin: 0 1em 0 1em;
+    }
+
+    .metodoContentDiv {
+        max-width: 40%;
+    }
+
+    .divForm {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formContent,
+    .formulario {
+        position: static;
+        max-width: none;
+        width: 50%;
+        align-items: center;
+
+        .formTextos {
+            text-align: center;
+        }
+    }
+
+    .contato {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    h1 {
+        font-size: 2.25rem;
+        line-height: 2.6rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    h4 {
+        font-size: .875rem;
+        line-height: 1.1rem;
+    }
+
+    p,
+    a {
+        font-size: .75rem;
+        line-height: 1.2rem;
+    }
+
+    .p2 {
+        font-size: .625rem;
+        line-height: 1rem;
+    }
+
+    .trabalhosCards {
+        width: 70%;
+    }
+
+    .metodoContentDiv {
+        max-width: 70%;
+    }
+
+    .formContent,
+    .formulario {
+        width: 80%;
+    }
+}
