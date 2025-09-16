@@ -53,6 +53,7 @@ div.ctas-hero {
 
   section.hero {
     width: 100vw;
+    flex-direction: column;
   }
 }
 
