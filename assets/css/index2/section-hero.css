@@ -204,10 +204,9 @@ div.menu-mobile.active div.line3 {
 @media screen and (max-width: 840px) {
   section.hero nav {
     border-radius: 30px;
-    padding: 3% 0;
+    padding: 1.5% 1.5%;
     justify-content: space-between;
-    transition: all .3s ease-in-out;
-    min-width: 130px;
+    transition: all .3s;
   }
 
   ul.menu-padrao {
@@ -219,12 +218,12 @@ div.menu-mobile.active div.line3 {
     max-width: 0;
     max-height: 0;
     overflow: hidden;
-    transition: all .3s ease-in-out;
+    transition: all .3s;
 
     li {
       opacity: 0;
       pointer-events: none;
-      transition: all 1s ease-in-out;
+      transition: all .3s;
     }
   }
 
