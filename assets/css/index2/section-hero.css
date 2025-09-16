@@ -35,7 +35,7 @@ div.conteudo-hero-left {
 
 div.textos-hero {
   display: flex;
-  width: 650px;
+  width: 40.625em;
   flex-direction: column;
   gap: 1.25em;
   text-align: left;
@@ -179,10 +179,10 @@ div.menu-mobile {
 }
 
 div.menu-mobile div {
-  width: 28px;
-  height: 2px;
+  width: 1.75em;
+  height: .125em;
   background-color: var(--corP);
-  margin: 8px;
+  margin: .5em;
   transition: all .3s;
 }
 
@@ -205,7 +205,7 @@ div.menu-mobile.active div.line3 {
 @media screen and (max-width: 840px) {
   section.hero nav {
     border-radius: 30px;
-    padding: 1.5% 1.5%;
+    padding: 1.5% 2% 1.5% 2%;
     justify-content: space-between;
     transition: all .3s;
   }
