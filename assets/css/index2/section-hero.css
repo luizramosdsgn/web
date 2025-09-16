@@ -47,13 +47,16 @@ div.ctas-hero {
 }
 
 @media screen and (max-width: 1200px) {
+  main.conteudo-hero {
+    flex-ditection: column;
+  }
+  
   main.conteudo-hero div.textos-hero {
     width: 80%;
   }
 
   section.hero {
     width: 100vw;
-    flex-direction: column;
   }
 }
 
