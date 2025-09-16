@@ -204,7 +204,7 @@ div.menu-mobile.active div.line3 {
 @media screen and (max-width: 840px) {
   section.hero nav {
     border-radius: 30px;
-    padding: 3%;
+    padding: 3% 0;
     justify-content: space-between;
     transition: all .3s ease-in-out;
     min-width: 130px;
