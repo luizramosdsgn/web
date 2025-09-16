@@ -48,7 +48,7 @@ div.ctas-hero {
 
 @media screen and (max-width: 1200px) {
   main.conteudo-hero {
-    flex-ditection: column;
+    flex-ditection: reverse-column;
   }
   
   main.conteudo-hero div.textos-hero {
