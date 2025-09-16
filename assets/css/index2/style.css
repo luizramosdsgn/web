@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     p,
-    a {
+    a:not(.ctaPrincipal) {
         font-size: .875rem;
     }
 
